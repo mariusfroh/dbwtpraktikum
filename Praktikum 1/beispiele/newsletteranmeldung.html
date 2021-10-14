@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+    Praktikum DBWT. Autoren:
+    Marius, Frohnhofen, 3215267
+    John Robin, Nolan, 3220391
+-->
+
+<html lang="de">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Newsletter</title>
+    </head>
+    <body>
+        <form action="formdata.html" method="post">
+            <h1>Anmeldung</h1>
+            Anrede<br>
+            <input type="radio" id="anrede_frau" name="anrede">
+            <label for="anrede_frau">Frau</label><br>
+            <input type="radio" id="anrede_herr" name="anrede">
+            <label for="anrede_herr">Herr</label><br>
+            <input type="radio" id="anrede_divers" name="anrede">
+            <label for="anrede_divers">Divers</label><br>
+            <br>
+            <label for="vorname">Vorname*</label><br>
+            <input type="text" id="vorname" name="vorname" required><br>
+            <label for="nachname">Nachname*</label><br>
+            <input type="text" id="nachname" name="nachname" required><br>
+            <label for="email">E-Mail*</label><br>
+            <input type="text" id="email" name="email" required><br><br>
+            <label for="interval_eingabe">Benachrichtigungsinterval</label><br>
+            <select id="interval_eingabe" name="interval">
+                <option value="Tag">Tag</option>
+                <option value="Woche">Woche</option>
+                <option value="Monat">Monat</option>
+            </select>
+            <br><br>
+            <input type="checkbox" id="datenschutz" required>
+            <label for="datenschutz">Datenschutzhinweise gelesen*</label>
+            <br><br>
+            <button>Abschicken</button>
+        </form>
+    </body>
+</html>
